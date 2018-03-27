@@ -695,8 +695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navigationManager: {fileID: 1214314586}
   tabToActivate: 2
-  notActive: {fileID: 21300000, guid: 956cc111b946d8741ae42ca57d50290d, type: 3}
-  active: {fileID: 21300000, guid: 0f5c9c7cc11adc54bb15088b3b11067a, type: 3}
+  notActive: {fileID: 21300000, guid: 0f5c9c7cc11adc54bb15088b3b11067a, type: 3}
+  active: {fileID: 21300000, guid: 956cc111b946d8741ae42ca57d50290d, type: 3}
 --- !u!61 &2014096484
 BoxCollider2D:
   m_ObjectHideFlags: 0
