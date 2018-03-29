@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class buyViewManager : MonoBehaviour {
     public Image mitochondria;
+    public Image mitochondriaBuy;
+    public Image mitochondriaInfo;
+    public Image mitochondriaDescription;
     public Image chloroplast;
     public Image vacuole;
     public Image test;
@@ -19,7 +22,12 @@ public class buyViewManager : MonoBehaviour {
 	void Update () {
         if (navManager.getCurrentTab() == 2)
         {
+            //Mitochondria
             mitochondria.gameObject.SetActive(true);
+            mitochondriaBuy.gameObject.SetActive(true);
+            mitochondriaInfo.gameObject.SetActive(true);
+            mitochondriaDescription.gameObject.SetActive(true);
+
             chloroplast.gameObject.SetActive(true);
             vacuole.gameObject.SetActive(true);
             test.gameObject.SetActive(true);
