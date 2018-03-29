@@ -34,7 +34,12 @@ public class buyViewManager : MonoBehaviour {
         }
         else
         {
+            //Mitochondria
             mitochondria.gameObject.SetActive(false);
+            mitochondriaBuy.gameObject.SetActive(false);
+            mitochondriaInfo.gameObject.SetActive(false);
+            mitochondriaDescription.gameObject.SetActive(false);
+
             chloroplast.gameObject.SetActive(false);
             vacuole.gameObject.SetActive(false);
             test.gameObject.SetActive(false);
