@@ -12,6 +12,7 @@ public class buyViewManager : MonoBehaviour {
     public Image vacuole;
     public Image test;
     public Image placeText;
+    public Image buyShade;
     public navigationManager navManager;
     public bool buyMode;
     public GameObject mitochondriaPrefab;
@@ -38,6 +39,7 @@ public class buyViewManager : MonoBehaviour {
             //mitochondriaInfo.gameObject.SetActive(true);
             mitochondriaDescription.gameObject.SetActive(true);
 
+            buyShade.enabled = true;
             chloroplast.gameObject.SetActive(true);
             vacuole.gameObject.SetActive(true);
             test.gameObject.SetActive(true);
@@ -50,6 +52,7 @@ public class buyViewManager : MonoBehaviour {
             //mitochondriaInfo.gameObject.SetActive(false);
             mitochondriaDescription.gameObject.SetActive(false);
 
+            buyShade.enabled = false;
             chloroplast.gameObject.SetActive(false);
             vacuole.gameObject.SetActive(false);
             test.gameObject.SetActive(false);
