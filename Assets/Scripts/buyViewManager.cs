@@ -71,8 +71,9 @@ public class buyViewManager : MonoBehaviour {
             {
                 Instantiate(mitochondriaPrefab, placeToPut, Quaternion.identity);
                 amountSelected--;
+                isTouched = false;
             }
-            
+
             if(amountSelected == 0)
             {
                 buyMode = false;
