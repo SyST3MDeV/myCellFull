@@ -16,6 +16,7 @@ public class buyViewManager : MonoBehaviour {
     public navigationManager navManager;
     public bool buyMode;
     public GameObject mitochondriaPrefab;
+    public resourceManager resourceManager;
     Vector2 placeToPut;
     bool isTouched = false;
 
@@ -66,7 +67,6 @@ public class buyViewManager : MonoBehaviour {
         if (buyMode)
         {
             placeText.gameObject.SetActive(true);
-            Debug.Log(amountSelected);
             if (isTouched)
             {
                 Instantiate(mitochondriaPrefab, placeToPut, Quaternion.identity);
@@ -117,6 +117,10 @@ public class buyViewManager : MonoBehaviour {
     {
         buyMode = false;
         itemIsSelected = false;
+        if(itemSelected == "mitochondria")
+        {
+            resourceManager.addResource("ATP", amountSelected);
+        }
         itemSelected = "";
         amountSelected = 0;
     }

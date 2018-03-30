@@ -24,7 +24,7 @@ public class cancelButton : MonoBehaviour {
         }
 	}
 
-    void OnMouseDown()
+    public void OnMouseDown()
     {
         Debug.Log("Cancel Registered");
         buyManager.cancelPurchase();
