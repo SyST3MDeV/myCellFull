@@ -18,7 +18,7 @@ public class resourceManager : MonoBehaviour {
         ATPCounter.text = "ATP: " + ATP.ToString() + "/" + ATPMax.ToString();
 	}
 
-    int getResource(string resourceToGet)
+    public int getResource(string resourceToGet)
     {
         if(resourceToGet == "ATP")
         {
@@ -34,7 +34,7 @@ public class resourceManager : MonoBehaviour {
         }
     }
 
-    void setResource(string resourceToSet, int numToSetTo)
+    public void setResource(string resourceToSet, int numToSetTo)
     {
         if (resourceToSet == "ATP")
         {
@@ -46,7 +46,7 @@ public class resourceManager : MonoBehaviour {
         }
     }
 
-    void addResource(string resourceToAdd, int numToAdd)
+    public void addResource(string resourceToAdd, int numToAdd)
     {
         if (resourceToAdd == "ATP")
         {
